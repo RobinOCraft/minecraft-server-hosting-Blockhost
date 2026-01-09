@@ -1,0 +1,6 @@
+; DNS Records for blockhosts.org
+; Cloudflare Pages Configuration
+; Import this file in Cloudflare Dashboard → DNS → Advanced → Import records
+
+@       300     IN      CNAME   blockhosts.pages.dev.
+www     300     IN      CNAME   blockhosts.pages.dev.

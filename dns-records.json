@@ -1,0 +1,46 @@
+{
+  "description": "DNS Records for blockhosts.org - Cloudflare Pages",
+  "records": [
+    {
+      "type": "CNAME",
+      "name": "@",
+      "content": "blockhosts.pages.dev",
+      "ttl": 1,
+      "proxied": true,
+      "comment": "Main domain pointing to Cloudflare Pages"
+    },
+    {
+      "type": "CNAME",
+      "name": "www",
+      "content": "blockhosts.pages.dev",
+      "ttl": 1,
+      "proxied": true,
+      "comment": "WWW subdomain pointing to Cloudflare Pages"
+    }
+  ],
+  "instructions": {
+    "1": "Go to Cloudflare Dashboard → Your Domain → DNS",
+    "2": "Click 'Add record' or 'Advanced' → 'Import records'",
+    "3": "Use the CSV or BIND file for import",
+    "4": "Or manually create the records above",
+    "5": "Wait 5-10 minutes for DNS propagation"
+  },
+  "optional_records": {
+    "staging": {
+      "type": "CNAME",
+      "name": "staging",
+      "content": "staging-blockhosts.pages.dev",
+      "ttl": 1,
+      "proxied": true,
+      "comment": "Optional staging environment"
+    },
+    "api": {
+      "type": "CNAME",
+      "name": "api",
+      "content": "blockhosts.pages.dev",
+      "ttl": 1,
+      "proxied": true,
+      "comment": "Optional API subdomain"
+    }
+  }
+}

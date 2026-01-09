@@ -1,0 +1,5 @@
+                          <YAxis 
+                            stroke=\"#9ca3af\" 
+                            style={{ fontSize: '12px' }}
+                            tickFormatter={(value) => formatNetworkSpeed(value)}
+                          />

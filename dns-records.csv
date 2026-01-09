@@ -1,0 +1,3 @@
+Type,Name,Content,TTL,Proxy
+CNAME,@,blockhosts.pages.dev,Auto,true
+CNAME,www,blockhosts.pages.dev,Auto,true
